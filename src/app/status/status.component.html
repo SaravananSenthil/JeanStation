@@ -1,0 +1,9 @@
+<div class="status-container">
+    <h1>Order Status</h1>
+    <ul>
+      <li *ngFor="let order of orders">
+        Order #{{ order.id }} - Status: {{ order.status }}
+      </li>
+    </ul>
+</div>
+  

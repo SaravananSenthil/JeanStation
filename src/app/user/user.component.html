@@ -1,0 +1,25 @@
+<div class="user-container">
+    <h1>User Profile</h1>
+    
+   
+      <form (ngSubmit)="updateUserDetails()">
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)]="user.username" name="username" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="user.email" name="email" required>
+  
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" [(ngModel)]="user.firstName" name="firstName">
+  
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" [(ngModel)]="user.lastName" name="lastName">
+  
+        <button type="submit">Update</button>
+      </form>
+      
+      <button (click)="deleteUser()">Delete Account</button>
+   
+  </div>
+  
+  

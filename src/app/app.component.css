@@ -1,0 +1,69 @@
+/* General styles for the app */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Container styles */
+  .app-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .buttons{
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+  
+  /* Header styles */
+  h1 {
+    color: #4CAF50; /* Green color for header */
+    margin: 20px 0;
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    background-color: #ffcc00; /* Yellow on hover */
+    color: #333; /* Dark text on hover */
+  }
+  
+  /* Router outlet container */
+  router-outlet {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+  

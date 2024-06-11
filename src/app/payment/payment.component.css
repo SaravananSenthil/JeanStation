@@ -1,0 +1,43 @@
+.payment-container {
+  background-color: #ffffe0; /* Light yellow background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.payment-container h1 {
+  color: #ffd700; /* Gold color for heading */
+  text-align: center;
+}
+
+.payment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-container label {
+  color: #808000; /* Olive color for labels */
+}
+
+.payment-container input {
+  padding: 8px;
+  border: 1px solid #808000;
+  border-radius: 4px;
+}
+
+.payment-container button {
+  background-color: #ffd700; /* Gold color for button */
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-container button:hover {
+  background-color: #ffcc00; /* Lighter gold color on hover */
+}

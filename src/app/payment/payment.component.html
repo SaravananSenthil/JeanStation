@@ -1,0 +1,19 @@
+<div class="payment-container">
+    <h1>Payment</h1>
+    <form (ngSubmit)="processPayment()">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" [(ngModel)]="paymentInfo.cardNumber" name="cardNumber" required>
+  
+      <label for="cardName">Card Name</label>
+      <input type="text" id="cardName" [(ngModel)]="paymentInfo.cardName" name="cardName" required>
+
+      <label for="expiryDate">Expiry Date</label>
+      <input type="text" id="expiryDate" [(ngModel)]="paymentInfo.expiryDate" name="expiryDate" required>
+  
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" [(ngModel)]="paymentInfo.cvv" name="cvv" required>
+  
+      <button type="submit">Pay {{ totalAmount }}</button>
+    </form>
+  </div>
+  

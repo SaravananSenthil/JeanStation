@@ -1,0 +1,58 @@
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #000080; /* Dark blue border */
+  border-radius: 8px;
+  background-color: #f0f8ff; /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2); /* Dark blue shadow */
+}
+
+h2 {
+  text-align: center;
+  color: #000080; /* Dark blue text color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #000080; /* Dark blue label color */
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #000080; /* Dark blue border */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus {
+  border-color: #0000cd; /* Medium blue border on focus */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000080; /* Dark blue background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0000cd; /* Medium blue background on hover */
+}
+ 

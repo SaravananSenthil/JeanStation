@@ -1,0 +1,30 @@
+<div class="order-container">
+    <h2>Order Details</h2>
+    
+      <p>Order ID: {{ order.id }}</p>
+      <p>Customer Name: <input [(ngModel)]="order.customerName" placeholder="Enter customer name"></p>
+      <p>Order Total: <input [(ngModel)]="order.total" placeholder="Enter order total"></p>
+      <p>Status: {{ order.status }}</p>
+  
+      <button (click)="updateStatus('Shipped')">Mark as Shipped</button>
+  
+      <h3>Delivery Information</h3>
+      <form (ngSubmit)="submitDeliveryInfo()">
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" [(ngModel)]="deliveryInfo.address" name="address" required>
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input type="text" id="city" [(ngModel)]="deliveryInfo.city" name="city" required>
+        </div>
+        <div>
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" id="postalCode" [(ngModel)]="deliveryInfo.postalCode" name="postalCode" required>
+        </div>
+        <button type="submit">Submit Delivery Info</button>
+      </form>
+   
+  </div>
+  
+  

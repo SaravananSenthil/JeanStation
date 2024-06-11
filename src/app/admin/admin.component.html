@@ -1,0 +1,43 @@
+<div class="admin-container">
+  <h2>Admin Dashboard</h2>
+
+  <!-- Manage Products Section -->
+  <section class="manage-products">
+    <h3>Manage Products</h3>
+    <form (ngSubmit)="addProduct()">
+      <input type="text" [(ngModel)]="newProduct.name" name="name" placeholder="Product Name" required>
+      <input type="text" [(ngModel)]="newProduct.description" name="description" placeholder="Product Description" required>
+      <input type="number" [(ngModel)]="newProduct.price" name="price" placeholder="Product Price" required>
+      <button type="submit">{{ editMode ? 'Update Product' : 'Add Product' }}</button>
+      <button type="button" *ngIf="editMode" (click)="cancelEdit()">Cancel</button>
+    </form>
+
+    <ul *ngIf="products.length > 0; else noProducts">
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.description }} - ${{ product.price }}
+        <button (click)="editProduct(product)">Edit</button>
+        <button (click)="deleteProduct(product.id)">Delete</button>
+      </li>
+    </ul>
+    <ng-template #noProducts>
+      <p>No products available. Please add a product.</p>
+    </ng-template>
+  </section>
+
+  <!-- Manage Orders Section -->
+  <section class="manage-orders">
+    <h3>Manage Orders</h3>
+    <ul *ngIf="orders.length > 0; else noOrders">
+      <li *ngFor="let order of orders">
+        Order #{{ order.id }} - {{ order.status }}
+        <button (click)="viewOrderDetails(order)">View Details</button>
+        <button (click)="updateOrderStatus(order, 'Shipped')">Mark as Shipped</button>
+        <button (click)="updateOrderStatus(order, 'Delivered')">Mark as Delivered</button>
+        <button (click)="deleteOrder(order.id)">Delete</button>
+      </li>
+    </ul>
+    <ng-template #noOrders>
+      <p>No orders available.</p>
+    </ng-template>
+  </section>
+</div>
