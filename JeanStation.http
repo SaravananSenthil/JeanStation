@@ -1,0 +1,6 @@
+@JeanStation_HostAddress = http://localhost:5229
+
+GET {{JeanStation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
