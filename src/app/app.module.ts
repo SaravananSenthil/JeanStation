@@ -20,6 +20,7 @@ import { AuthService } from './service/auth.service';
 import { UserService } from './service/user.service';
 import { AdminService } from './service/admin.service';
 import { AppRoutingModule } from './app-routing.module';
+import { CompComponent } from './comp/comp.component';
 
 
 
@@ -36,7 +37,8 @@ import { AppRoutingModule } from './app-routing.module';
     UserComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    CompComponent
   ],
   imports: [
     BrowserModule,
