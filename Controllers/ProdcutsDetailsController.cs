@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JeanStation.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace JeanStation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors]
     public class ProdcutsDetailsController : ControllerBase
     {
         private readonly JeanStationDbContext _context;

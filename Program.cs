@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<JeanStationDbContext>(options =>
    options.UseSqlServer(builder.Configuration.GetConnectionString("JeanStationContext")));
+builder.Services.AddCors(options => options.AddPolicy("MyCors", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
 var app = builder.Build();
 
@@ -24,6 +25,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseCors("MyCors");
 
 app.MapControllers();
 

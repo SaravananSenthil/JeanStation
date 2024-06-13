@@ -250,3 +250,4 @@ C:\Users\mrsar\source\repos\JeanStation\JeanStation\obj\Debug\net8.0\refint\Jean
 C:\Users\mrsar\source\repos\JeanStation\JeanStation\obj\Debug\net8.0\JeanStation.pdb
 C:\Users\mrsar\source\repos\JeanStation\JeanStation\obj\Debug\net8.0\JeanStation.genruntimeconfig.cache
 C:\Users\mrsar\source\repos\JeanStation\JeanStation\obj\Debug\net8.0\ref\JeanStation.dll
+C:\Users\mrsar\source\repos\JeanStation\JeanStation\obj\Debug\net8.0\JeanStation.sourcelink.json

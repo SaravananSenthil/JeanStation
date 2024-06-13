@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JeanStation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1ab8f4fe8e09a0dd993fd39daabf31fbf050261")]
 [assembly: System.Reflection.AssemblyProductAttribute("JeanStation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JeanStation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
